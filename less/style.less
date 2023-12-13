@@ -3,15 +3,21 @@
 *{
     margin: 0;
     padding: 0;
-    color: @grey--light;
+    color: @paragraph;
     font-family: @font-family-sans-serif;
 }
 
 body{
-    background-color: @color--main;
+    background-color: @background;
 }
 
 a{
     text-decoration: none;
-    color: @green--dark;
+    color: @main;
+
+    &:hover{
+        color: lighten(@main, 20%);
+    }
 }
+
+@import 'header';
